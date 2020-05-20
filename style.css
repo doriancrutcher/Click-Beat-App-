@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.app{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5vh;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+
+}
+
+.app p{
+    margin-top: 0.5vh;
+    
+}
+
+.pads{
+    
+    background: blue;
+    width:100%;
+    display: flex;
+    
+}
+
+.pads > div{
+    height:100px;
+    width:100px;
+    flex:1;
+}
+
+.pad1{
+    background: darkblue;
+}.pad2{
+    background: pink;
+}.pad3{
+    background: purple;
+}.pad4{
+    background: black
+}.pad5{
+    background: darkgreen;
+}.pad6{
+    background: #60d394;
+}
+
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left:20%;
+        
+    }
+    50%{
+        bottom: 50%;
+        left:50%;
+    }
+    100%{
+        bottom:0%;
+        left:80%;
+    }
+    
+    
+}
+
+.visual >div{
+    position: absolute;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
+.featureButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.col1{
+    margin-right: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width:80%;
+    height: 80%;
+    border-radius: 50%;
+    background: white;
+}
+
+.col2{
+    margin-left: 50%;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}
+.Fbutton {
+    width: 100px;
+    height: 50px;
+    background: gray;
+    border-radius: 10px;
+}
